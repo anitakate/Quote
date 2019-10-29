@@ -15,7 +15,7 @@ background: linear-gradient(180deg, rgba(12,61,147,1) 23%, rgba(33,81,166,1) 47%
 clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
 }
 
-.centered {
+.centeed {
   position: absolute;
   top: 40%;
   left: 50%;
