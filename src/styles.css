@@ -1,0 +1,43 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+body{
+  background: rgb(12,61,147);
+background: linear-gradient(180deg, rgba(12,61,147,1) 23%, rgba(33,81,166,1) 47%, rgba(45,100,196,1) 62%, rgba(52,116,226,1) 72%, rgba(60,129,247,1) 85%, rgba(80,141,245,1) 99%);
+}
+
+*{
+  margin: 0;
+  top: 0;
+}
+#banner-img{
+  height: 90vh;
+  width: 100%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#btn{
+  border-radius: 50%;
+  padding: 10em;
+  background-color: rgb(18, 18, 95);
+}
+
+#title{
+  font-size: 30px;
+  color: white;
+  font-family: 'Lobster Two', cursive;
+}
+
+#intro{
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+  font-family: 'Great Vibes', cursive;
+}

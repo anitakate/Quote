@@ -1,0 +1,28 @@
+<!-- QUOTES -->
+<div class="container">
+  <div class="row">
+    <div appBestQuote *ngIf="bestQuote().upVote !== 0" class="col-md-12">
+      <p>{{bestQuote().author}}</p>
+      <p>{{bestQuote().description}}</p>
+      <p>{{bestQuote().name}}</p>
+    </div>
+    <div class="col-md-6">
+      <div *ngFor='let quote of quotes;let i = index'>
+        <div  class="card" id="view-card">
+            <div class="card-body">
+              <h5 class="card-title">{{quote.description}}</h5>
+              <button (click)='toggleDetails(i)' ><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        <div *ngIf='quote.showDescription'>
+          <app-quote-detail  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+ </div>
+  </div>
+  <p *ngIf='quotes.length > 5'>You have too many goals</p>
+</div>
+
