@@ -11,7 +11,7 @@ export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
     new Quote(1,'Luie Brown','Barak Obama', 'Yes we can',new Date(2019,9,14),0,0),
     new Quote(2,'Kayte spark','Abraham Lincon','If you cant do great things do small things in a gret way.',new Date(2019,6,9),0,0),
-    new Quote(3,'Katel Qwevo','Abraham Lincon','Life i an art of drawing without an eraser',new Date(2019,1,12),0,0),
+    new Quote(3,'Katel Qwevo','Abraham Lincon','Life is an art of drawing without an eraser',new Date(2019,1,12),0,0),
   ];
 
   deleteQuote(isComplete, index){
