@@ -10,7 +10,7 @@
       <div *ngFor='let quote of quotes;let i = index'>
         <div  class="card" id="view-card">
             <div class="card-body">
-              <h5 class="car-title">{{quote.description}}</h5>
+              <h5 class="card-title">{{quote.description}}</h5>
               <button (click)='toggleDetails(i)' ><i class="fa fa-caret-down" aria-hidden="true"></i></button>
             </div>
           </div>
